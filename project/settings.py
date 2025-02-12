@@ -44,7 +44,7 @@ cloud_platform = os.environ.setdefault('CLOUD_PLATFORM', '')
 DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
 
 # SECURITY WARNING: Delete this line after setting up the environment variables
-print(f"SECRET KEY:", get_random_secret_key())
+# print(f"SECRET KEY:", get_random_secret_key())
 
 # SECURITY WARNING: keep the secret key used in production secret!
 if DEBUG:
@@ -68,11 +68,11 @@ else:
 ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '').split(',')
 ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS]
 
-if not DEBUG:
-    CORS_ALLOWED_ORIGINS = os.environ.get('ALLOWED_CORS').replace(' ', '').split(',')
+# if not DEBUG:
+#     CORS_ALLOWED_ORIGINS = os.environ.get('ALLOWED_CORS').replace(' ', '').split(',')
 
-    CORS_ORIGIN_WHITELIST = os.environ.get('ALLOWED_CORS').replace(' ', '').split(',')
-    CSRF_TRUSTED_ORIGINS = os.environ.get('ALLOWED_CORS').replace(' ', '').split(',')
+#     CORS_ORIGIN_WHITELIST = os.environ.get('ALLOWED_CORS').replace(' ', '').split(',')
+#     CSRF_TRUSTED_ORIGINS = os.environ.get('ALLOWED_CORS').replace(' ', '').split(',')
 
 
 PROJECT_TITLE = 'Project' # name of the project
