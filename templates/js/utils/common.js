@@ -5,11 +5,6 @@
 /**
  * commonly used functions
  */
-let defaultToast = new Toast("#toast")
-
-window.addEventListener("load", () => {
-    defaultToast = new Toast("#toast")
-})
 
 /**
  * Fetches the country codes json file

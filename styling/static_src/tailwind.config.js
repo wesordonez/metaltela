@@ -41,6 +41,7 @@ module.exports = {
         // '!../../**/node_modules',
         /* JS 2: Process all JavaScript files in the project. */
         // '../../**/*.js',
+        '../node_modules/flowbite/**/*.js',
 
         /**
          * Python: If you use Tailwind CSS classes in Python, uncomment the following line
@@ -49,9 +50,16 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                'mt-yellow': '#EBCE33',
+                'mt-blue': '#1A2F52',
+                'mt-green': '#25D366',
+            },
+        },
     },
     plugins: [
+        require('flowbite/plugin'),
         /**
          * '@tailwindcss/forms' is the forms plugin that provides a minimal styling
          * for forms. If you don't like it or have own styling for forms,
