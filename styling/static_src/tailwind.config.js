@@ -49,7 +49,13 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                'mt-yellow': '#EBCE33',
+                'mt-blue': '#1A2F52',
+                'mt-green': '#25D366',
+            },
+        },
     },
     plugins: [
         /**
