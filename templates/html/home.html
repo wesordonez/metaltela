@@ -5,17 +5,17 @@
 
 {% block content %}
 
-<section class="tw-relative tw-w-full tw-bg-mt-yellow tw-px-4 tw-py-12 md:tw-py-16">
-    <div class="tw-max-w-7xl tw-mx-auto tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-gap-6 md:tw-gap-12">
+<section class="tw-relative tw-w-full tw-bg-mt-yellow">
+    <div class="tw-mx-auto tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-gap-6 md:tw-gap-12">
         <!-- Image Container -->
         <div class="tw-w-full md:tw-w-1/2">
-            <img src="your-image-url.png" alt="MetalTela Store" class="tw-w-full tw-rounded-lg tw-shadow-lg">
+            <img src="{% static './assets/images/home/mt-home-tienda.jpeg' %}" alt="MetalTela Tienda" class="tw-w-full tw-h-full">
         </div>
         
         <!-- Text Container -->
-        <div class="tw-w-full md:tw-w-1/2 tw-bg-blue-900 tw-p-6 md:tw-p-10 tw-rounded-lg tw-text-white tw-text-center md:tw-text-left">
-            <h2 class="tw-text-2xl md:tw-text-4xl tw-font-bold tw-leading-tight">
-                MALLAS ZARANDAS Y MUCHO MÁS EN EL <span class="tw-text-yellow-400">PARQUE INDUSTRIAL</span>
+        <div class="tw-w-full md:tw-w-1/2 tw-bg-mt-blue tw-p-6 md:tw-p-10 tw-rounded-[50px] tw-text-white tw-text-center md:tw-text-right tw-relative md:tw--ml-20">
+            <h2 class="tw-text-2xl lg:tw-text-8xl md:tw-text-6xl tw-font-bold">
+            MALLAS ZARANDAS Y MUCHO MÁS EN EL <span class="tw-text-mt-yellow">PARQUE INDUSTRIAL</span>
             </h2>
         </div>
     </div>
