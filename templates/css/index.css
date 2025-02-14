@@ -16,6 +16,8 @@
 	font-style: normal;
 }
 
+@import 'flowbite';
+
 
 html {
     scroll-behavior: smooth;
