@@ -9,10 +9,17 @@
     --primary-text-color: #1d1b1b;
 }
 
+@font-face {
+	font-family: "Futura";
+	src: url("../fonts/Futura Bold font.tff");
+	font-weight: bold;
+	font-style: normal;
+}
+
 
 html {
     scroll-behavior: smooth;
-    font-family: "Roboto", sans-serif;
+    font-family: "Futura", sans-serif;
 }
 
 header{
