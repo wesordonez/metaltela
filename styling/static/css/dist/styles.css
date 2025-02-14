@@ -1033,6 +1033,10 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: 1rem;
 }
 
+.tw-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .tw-block {
   display: block;
 }
@@ -1301,6 +1305,11 @@ input[type="range"]::-ms-fill-lower {
 .tw-py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.tw-py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .tw-text-center {
