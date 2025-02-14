@@ -1033,6 +1033,10 @@ input[type="range"]::-ms-fill-lower {
   display: block;
 }
 
+.tw-inline-block {
+  display: inline-block;
+}
+
 .tw-flex {
   display: flex;
 }
@@ -1244,6 +1248,11 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
 }
 
+.tw-bg-mt-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 211 102 / var(--tw-bg-opacity, 1));
+}
+
 .tw-p-2 {
   padding: 0.5rem;
 }
@@ -1283,6 +1292,11 @@ input[type="range"]::-ms-fill-lower {
 .tw-px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.tw-py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .tw-text-center {
@@ -1365,6 +1379,14 @@ input[type="range"]::-ms-fill-lower {
 .tw-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.tw-underline {
+  text-decoration-line: underline;
+}
+
+.tw-no-underline {
+  text-decoration-line: none;
 }
 
 .tw-transition-transform {
