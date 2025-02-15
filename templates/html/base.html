@@ -11,29 +11,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="shortcut icon" href="{% static 'assets/logos/logo.png' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static 'assets/logos/metaltela-logo.png' %}" type="image/png">
     
     <meta name="theme-color" content="#ffffff">
 
     <title>{% block title %}{% endblock title %} {% settings_value "PROJECT_TITLE" %}</title>
     <meta name="description" 
-            content="{% block description %}Building websites that brings you business{% endblock description %}">
+            content="{% block description %}Fábrica de mallas, zarandas, y chapa expandida - SCZ Bolivia{% endblock description %}">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="{% block socialTitle %}{% endblock socialTitle %} Project" />
+    <meta property="og:title" content="{% block socialTitle %}{% endblock socialTitle %} Metaltela Ltda." />
     <meta property="og:description" 
-                        content="{% block socialDescription %}Description Here{% endblock socialDescription %}" />
+                        content="{% block socialDescription %}Fábrica de mallas, zarandas, y chapa expandida - SCZ Bolivia{% endblock socialDescription %}" />
     <meta property="og:type" content="{% block pageType %}website{% endblock pageType %}" />
     <meta property="og:url" content="{% block pageLink %}{{request.build_absolute_uri}}{% endblock pageLink %}" />
-    <meta property="og:image" content="{% block pageImage %}{{ request.scheme }}://{{request.get_host}}{% static "./assets/images/home/hiking4.jpg" %}{% endblock pageImage %}" />
+    <meta property="og:image" content="{% block pageImage %}{{ request.scheme }}://{{request.get_host}}{% static "./assets/images/logos/metaltela-logo.png" %}{% endblock pageImage %}" />
 
     <!-- Twitter -->
     {% comment %} 
     `some of the meta tags specific to twitter has been dropped in favor of OG tags, Since twitter also supports OG tags as fallback
     https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started
     {% endcomment %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@">
+    {% comment %} <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@"> {% endcomment %}
     {% comment %} <meta name="twitter:title" content="{% block twitterTitle %}Project{% endblock twitterTitle %}">
     <meta name="twitter:description" content="{% block twitterDescription %}Description Here{% endblock socialDescription %}"> {% endcomment %}
     {% comment %} <meta name="twitter:image" content="{% block pageImage %}http://www.example.com/image.jpg{% endblock pageImage %}"> {% endcomment %}
