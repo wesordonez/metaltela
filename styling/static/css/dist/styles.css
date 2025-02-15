@@ -1694,6 +1694,10 @@ input[type="range"]::-ms-fill-lower {
     margin-top: 0px;
   }
 
+  .md\:-ml-20 {
+    margin-left: -5rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1732,6 +1736,11 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:text-8xl {
     font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
