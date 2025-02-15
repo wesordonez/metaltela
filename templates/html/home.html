@@ -5,96 +5,110 @@
 
 {% block content %}
 
-<section class="tw-relative tw-w-full tw-min-h-screen tw-bg-mt-yellow">
-    <div class="tw-mx-auto tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-gap-6 md:tw-gap-12">
+<section class="relative w-full min-h-screen bg-mt-yellow">
+    <div class="mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12">
         <!-- Image Container -->
-        <div class="tw-w-full md:tw-w-1/2">
-            <img src="{% static './assets/images/home/mt-home-tienda.jpeg' %}" alt="MetalTela Tienda" class="tw-w-full tw-h-full">
+        <div class="w-full md:w-1/2">
+            <img src="{% static './assets/images/home/mt-home-tienda.jpeg' %}" alt="MetalTela Tienda" class="w-full h-full">
         </div>
         
         <!-- Text Container -->
-        <div class="tw-w-[90%] md:tw-w-1/2 tw-bg-mt-blue tw-p-6 md:tw-p-10 tw-rounded-3xl md:tw-rounded-[50px] tw-text-white tw-text-right md:tw-text-right tw-relative md:tw--ml-20 tw--mt-20 md:tw-mt-0">
-            <h2 class="tw-text-4xl lg:tw-text-8xl md:tw-text-6xl tw-font-bold">
-            MALLAS ZARANDAS Y MUCHO MÁS EN EL <span class="tw-text-mt-yellow">PARQUE INDUSTRIAL</span>
+        <div class="w-[90%] md:w-1/2 bg-mt-blue p-6 md:p-10 rounded-3xl md:rounded-[50px] text-white text-right md:text-right relative md:-ml-20 -mt-20 md:mt-0">
+            <h2 class="text-4xl lg:text-7xl md:text-6xl font-bold">
+            MALLAS ZARANDAS Y MUCHO MÁS EN EL <span class="text-mt-yellow">PARQUE INDUSTRIAL</span>
             </h2>
         </div>
     </div>
 </section>
 
-<section class="tw-w-full tw-bg-mt-blue tw-text-white tw-py-12">
-    <div class="tw-container tw-mx-auto tw-text-center">
-        <h2 class="tw-text-3xl lg:tw-text-5xl tw-font-bold tw-mb-8">CONOCE NUESTROS PRODUCTOS</h2>
-        <div class="tw-carousel-container">
+<section class="w-full bg-mt-blue text-white py-12">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl lg:text-5xl font-bold mb-8">CONOCE NUESTROS PRODUCTOS</h2>
             <!-- Carousel will be added here -->
-            <div id="animation-carousel" class="tw-relative tw-w-full" data-carousel="slide">
+            <div id="animation-carousel" class="relative w-[90%] mx-auto" data-carousel="slide">
                 <!-- Carousel wrapper -->
-                <div class="tw-relative tw-h-56 tw-overflow-hidden tw-rounded-lg md:tw-h-96">
-                     <!-- Item 1 -->
-                    <div class=" tw-duration-200 tw-ease-linear" data-carousel-item>
-                        <img src="{% static './assets/images/home/mt-products-1.jpeg' %}" class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                <div class="relative h-[450px] overflow-hidden rounded-2xl">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item>
+                        <img src="{% static 'assets/images/home/mt-products-1.jpeg' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Metaltela Mallas, Zarandas, y Chapas Expandidas Productos 1">
                     </div>
                     <!-- Item 2 -->
-                    <div class=" tw-duration-200 tw-ease-linear" data-carousel-item>
-                        <img src="{% static './assets/images/home/mt-products-1.jpeg' %}" class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item>
+                        <img src="{% static 'assets/images/home/mt-products-2.jpeg' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Metaltela Mallas, Zarandas, y Chapas Expandidas Productos 2">
                     </div>
                     <!-- Item 3 -->
-                    <div class=" tw-duration-200 tw-ease-linear" data-carousel-item="active">
-                        <img src="{% static './assets/images/home/mt-products-1.jpeg' %}" class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item="active">
+                        <img src="{% static 'assets/images/home/mt-products-3.jpeg' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Metaltela Mallas, Zarandas, y Chapas Expandidas Productos 3">
                     </div>
                     <!-- Item 4 -->
-                    <div class="tw-hidden tw-duration-200 tw-ease-linear" data-carousel-item>
-                        <img src="{% static './assets/images/home/mt-products-1.jpeg' %}" class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item>
+                        <img src="{% static 'assets/images/home/mt-products-4.jpeg' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Metaltela Mallas, Zarandas, y Chapas Expandidas Productos 4">
                     </div>
                     <!-- Item 5 -->
-                    <div class="tw-hidden tw-duration-200 tw-ease-linear" data-carousel-item>
-                        <img src="{% static './assets/images/home/mt-products-1.jpeg' %}" class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item>
+                        <img src="{% static 'assets/images/home/mt-products-5.jpeg' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Metaltela Mallas, Zarandas, y Chapas Expandidas Productos 5">
                     </div>
                     <!-- Item 6 -->
-                    <div class="tw-hidden tw-duration-200 tw-ease-linear" data-carousel-item>
-                        <img src="{% static './assets/images/home/mt-products-1.jpeg' %}" class="tw-absolute tw-block tw-w-full -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2" alt="...">
+                    <div class="hidden duration-200 ease-linear w-full h-full" data-carousel-item>
+                        <img src="{% static 'assets/images/home/mt-products-6.jpeg' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Metaltela Mallas, Zarandas, y Chapas Expandidas Productos 6">
                     </div>
                 </div>
-                
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
             </div>
-        </div>
-        <button class="tw-mt-8 tw-font-bold tw-bg-mt-yellow tw-text-white tw-py-2 tw-px-6 tw-rounded-full">DESCARGAR CATÁLOGO</button>
+
+        <a href="{% static 'assets/downloads/metaltela-catalogo.pdf' %}" download>
+            <button class="mt-8 font-bold bg-mt-yellow text-white py-2 px-6 rounded-full">DESCARGAR CATÁLOGO</button>
+        </a>
     </div>
 </section>
 
-<section class="tw-w-full tw-bg-mt-yellow tw-text-white tw-py-12">
-    <div class="tw-container tw-mx-auto tw-text-center">
-        <h2 class="tw-text-3xl lg:tw-text-5xl tw-font-bold tw-mb-8">¡ESTAMOS EN EL PARQUE INDUSTRIAL!</h2>
-        <div class="tw-w-[90%] sm:tw-w-full tw-min-h-[450px] tw-mx-auto tw-flex tw-justify-center tw-rounded-3xl tw-overflow-hidden">
+<section class="w-full bg-mt-yellow text-white py-12">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl lg:text-5xl font-bold mb-8">¡ESTAMOS EN EL PARQUE INDUSTRIAL!</h2>
+        <div class="w-[90%] sm:w-full min-h-[450px] mx-auto flex justify-center rounded-3xl overflow-hidden">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.989169065469!2d-63.1405088!3d-17.7451495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e78e441ea6b7%3A0x8a9c9ac836c90472!2sMetaltela%20Parque%20Industrial!5e0!3m2!1sen!2sus!4v1739568042098!5m2!1sen!2sus" style="border:0; width: 100%; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>
 
-<section class="tw-w-full tw-bg-mt-green tw-text-white tw-py-8">
-    <div class=" tw-w-full tw-h-full tw-text-center">
-        <h2 class="tw-text-3xl lg:tw-text-5xl tw-font-bold">
-            <a href="https://wa.me/1234567890" class="tw-block tw-w-full tw-h-full tw-text-white tw-no-underline">
+<section class="w-full bg-mt-green text-white py-8">
+    <div class="w-full h-full text-center">
+        <h2 class="text-3xl lg:text-5xl font-bold">
+            <a href="https://wa.link/uo76rc" class="block w-full h-full text-white no-underline">
                 ¡HAZ CLIC AQUÍ PARA ESCRIBIRNOS AL WHATSAPP!
             </a>
         </h2>
     </div>
 </section>
 
-<section class="tw-w-full tw-bg-mt-blue tw-text-white tw-py-8">
-    <div class="tw-container tw-mx-auto tw-text-center tw-py-10">
-        <h2 class="tw-text-3xl lg:tw-text-5xl tw-font-bold tw-mb-6">SÍGUENOS EN NUESTRAS REDES SOCIALES</h2>
-        <div class="tw-flex tw-justify-center tw-gap-6">
-            <a href="https://www.facebook.com/yourpage" target="_blank" class="tw-text-white">
-                <i class="bi bi-facebook tw-text-4xl"></i>
+<section class="w-full bg-mt-blue text-white py-8">
+    <div class="container mx-auto text-center py-10">
+        <h2 class="text-3xl lg:text-5xl font-bold mb-6">SÍGUENOS EN NUESTRAS REDES SOCIALES</h2>
+        <div class="flex justify-center gap-6">
+            <a href="https://www.facebook.com/share/1DyUh2vsZs/?mibextid=wwXIfr" target="_blank" class="text-white">
+                <i class="bi bi-facebook text-4xl"></i>
             </a>
-            <a href="https://www.instagram.com/yourpage" target="_blank" class="tw-text-white">
-                <i class="bi bi-instagram tw-text-4xl"></i>
+            <a href="https://www.instagram.com/metaltelaparqueindustrial?igsh=NjZhOTlncHdqa3ds" target="_blank" class="text-white">
+                <i class="bi bi-instagram text-4xl"></i>
             </a>
-            <a href="https://www.twitter.com/yourpage" target="_blank" class="tw-text-white">
-                <i class="bi bi-twitter tw-text-4xl"></i>
-            </a>
-            <a href="https://www.linkedin.com/yourpage" target="_blank" class="tw-text-white">
-                <i class="bi bi-linkedin tw-text-4xl"></i>
+            <a href="https://youtube.com/@metaltelaparqueindustrial?si=BHQNLJPTF_pKB6Bh" target="_blank" class="text-white">
+                <i class="bi bi-youtube text-4xl"></i>
             </a>
         </div>
     </div>

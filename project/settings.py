@@ -75,7 +75,7 @@ ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS]
 #     CSRF_TRUSTED_ORIGINS = os.environ.get('ALLOWED_CORS').replace(' ', '').split(',')
 
 
-PROJECT_TITLE = 'Project' # name of the project
+PROJECT_TITLE = 'Metaltela Ltda.' # name of the project
 
 if DEBUG:
     DOMAIN = "http://localhost:8000"
@@ -114,7 +114,7 @@ INSTALLED_APPS = [
 
 
 SITE_ID = 1 # for sitemaps
-# ANALYTICS_TAG_ID = env('GOOGLE_ANALYTICS') # for analytics tag on frontend
+ANALYTICS_TAG_ID = os.environ.get('GOOGLE_ANALYTICS') # for analytics tag on frontend
 
 AUTH_USER_MODEL = "user.User" 
 
