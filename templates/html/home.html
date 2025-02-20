@@ -13,7 +13,7 @@
         </div>
         
         <!-- Text Container -->
-        <div class="w-[90%] lg:w-1/2 bg-mt-blue p-6 md:p-10 rounded-3xl md:rounded-[50px] text-white text-right md:text-right relative lg:-ml-20 mb-20 -mt-20 lg:mt-0">
+        <div class="w-[90%] lg:w-1/2 md:max-w-[580px] max-w-[350px] bg-mt-blue p-6 md:p-10 rounded-3xl md:rounded-[50px] text-white text-right md:text-right relative lg:-ml-20 mb-20 -mt-20 lg:mt-0">
             <h2 class="text-4xl lg:text-7xl md:text-6xl font-bold">
             MALLAS ZARANDAS Y MUCHO MÁS EN EL <span class="text-mt-yellow">PARQUE INDUSTRIAL</span>
             </h2>
@@ -104,11 +104,14 @@
             <a href="https://www.facebook.com/share/1DyUh2vsZs/?mibextid=wwXIfr" target="_blank" class="text-white">
                 <i class="bi bi-facebook text-4xl"></i>
             </a>
-            <a href="https://www.instagram.com/metaltelaparqueindustrial?igsh=NjZhOTlncHdqa3ds" target="_blank" class="text-white">
+            <a href="https://www.instagram.com/metaltelaparqueindustrial" target="_blank" class="text-white">
                 <i class="bi bi-instagram text-4xl"></i>
             </a>
-            <a href="https://youtube.com/@metaltelaparqueindustrial?si=BHQNLJPTF_pKB6Bh" target="_blank" class="text-white">
+            <a href="https://youtube.com/@metaltelaparqueindustrial" target="_blank" class="text-white">
                 <i class="bi bi-youtube text-4xl"></i>
+            </a>
+            <a href="https://tiktok.com/@metaltelaparqueindus" target="_blank" class="text-white">
+                <i class="bi bi-tiktok text-4xl"></i>
             </a>
         </div>
     </div>
@@ -125,6 +128,44 @@
     <script src="{% static "./js/home.js" %}"></script>
 
     <script src="{% static 'flowbite/dist/flowbite.min.js' %}"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.link/uo76rc" class="whatsapp-float" target="_blank">
+        <img src="{% static 'assets/images/home/whatsapp-icon.png' %}" alt="WhatsApp" class="whatsapp-icon transition ease-in-out duration-300">
+    </a>
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        .whatsapp-icon {
+            width: 60px;
+            height: 60px;
+        }
+        .whatsapp-float.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+    <script>
+        // Hide the WhatsApp button when it reaches the WhatsApp banner section
+        document.addEventListener('scroll', function() {
+            const whatsappButton = document.querySelector('.whatsapp-float');
+            const whatsappBanner = document.querySelector('.bg-mt-green');
+            const bannerPosition = whatsappBanner.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (bannerPosition <= windowHeight) {
+                whatsappButton.classList.add('hidden');
+            } else {
+                whatsappButton.classList.remove('hidden');
+            }
+        });
+    </script>
 
 
 {% endblock scripts %}
