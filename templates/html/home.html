@@ -129,5 +129,43 @@
 
     <script src="{% static 'flowbite/dist/flowbite.min.js' %}"></script>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.link/uo76rc" class="whatsapp-float" target="_blank">
+        <img src="{% static 'assets/images/home/whatsapp-icon.png' %}" alt="WhatsApp" class="whatsapp-icon transition ease-in-out duration-300">
+    </a>
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        .whatsapp-icon {
+            width: 60px;
+            height: 60px;
+        }
+        .whatsapp-float.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+    <script>
+        // Hide the WhatsApp button when it reaches the WhatsApp banner section
+        document.addEventListener('scroll', function() {
+            const whatsappButton = document.querySelector('.whatsapp-float');
+            const whatsappBanner = document.querySelector('.bg-mt-green');
+            const bannerPosition = whatsappBanner.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (bannerPosition <= windowHeight) {
+                whatsappButton.classList.add('hidden');
+            } else {
+                whatsappButton.classList.remove('hidden');
+            }
+        });
+    </script>
+
 
 {% endblock scripts %}
